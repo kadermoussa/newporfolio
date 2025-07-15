@@ -44,29 +44,10 @@
     <div class="header-container d-flex flex-column align-items-start">
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-          <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+          <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Accueil</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i>À propos</a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i>Projets</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
         </ul>
       </nav>
 
@@ -105,101 +86,70 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+            <div class="project-images row">
+              <!-- Projet Villa -->
+              <div id="details-villa" style="display:none;">
+                <div class="col-md-6 mb-4">
+                  <a href="assets/images/villa-rendu1.png.png" class="glightbox" data-gallery="villa-details">
+                    <img src="assets/images/villa-rendu1.png.png" class="img-fluid" alt="Rendu 3D Enscape">
+                  </a>
+                  <p class="image-desc text-center mt-2">Rendu 3D Enscape</p>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                <div class="col-md-6 mb-4">
+                  <a href="assets/images/villa-r11+s.png" class="glightbox" data-gallery="villa-details">
+                    <img src="assets/images/villa-r11+s.png" class="img-fluid" alt="Modélisation sur Revit">
+                  </a>
+                  <p class="image-desc text-center mt-2">Modélisation sur Revit</p>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Portfolio Image" class="img-fluid" loading="lazy">
-                </div>
-
               </div>
-              <div class="swiper-pagination"></div>
+              <!-- Projet Hôtel -->
+              <div id="details-hotel" style="display:none;">
+                <div class="row">
+                  <div class="col-md-4 mb-4">
+                    <a href="assets/images/capture_model_structure.png" class="glightbox" data-gallery="hotel-details">
+                      <img src="assets/images/capture_model_structure.png" class="img-fluid" alt="Modélisation 3D sur Revit">
+                    </a>
+                    <p class="image-desc text-center mt-2">Modélisation 3D sur Revit</p>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <a href="assets/images/capture_model_analytique.png" class="glightbox" data-gallery="hotel-details">
+                      <img src="assets/images/capture_model_analytique.png" class="img-fluid" alt="Modèle analytique (Revit)">
+                    </a>
+                    <p class="image-desc text-center mt-2">Modèle analytique (Revit)</p>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <a href="assets/images/capture_model_robot.png" class="glightbox" data-gallery="hotel-details">
+                      <img src="assets/images/capture_model_robot.png" class="img-fluid" alt="Analyse structurelle sous Robot Structural Analysis">
+                    </a>
+                    <p class="image-desc text-center mt-2">Analyse structurelle sous Robot Structural Analysis</p>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <a href="assets/images/projet%20structure%20d%27hotel/pla%20de%20structure%20niveau1.jpg" class="glightbox" data-gallery="hotel-details">
+                      <img src="assets/images/projet%20structure%20d%27hotel/pla%20de%20structure%20niveau1.jpg" class="img-fluid" alt="Plan de structure - Niveau 1">
+                    </a>
+                    <p class="image-desc text-center mt-2">Plan de structure - Niveau 1</p>
+                  </div>
+                  <div class="col-md-4 mb-4">
+                    <a href="assets/images/projet%20structure%20d%27hotel/plan%20de%20structure%20-%20Fondations.jpg" class="glightbox" data-gallery="hotel-details">
+                      <img src="assets/images/projet%20structure%20d%27hotel/plan%20de%20structure%20-%20Fondations.jpg" class="img-fluid" alt="Plan de fondations">
+                    </a>
+                    <p class="image-desc text-center mt-2">Plan de fondations</p>
+                  </div>
+                  <!-- Ajoute ici d'autres images si besoin, toujours en col-md-4 -->
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web Development</li>
-                <li><strong>Client</strong>: Victoria Technologies</li>
-                <li><strong>Project date</strong>: 01 March, 2024</li>
-                <li><strong>Project URL</strong>: <a href="#" target="_blank">www.example.com</a></li>
-              </ul>
-            </div>
+            <!-- Suppression de la liste Détails du projet -->
           </div>
 
-          <div class="col-lg-12">
+          <!-- Après la galerie d'images -->
+          <div class="col-lg-12 mt-4">
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Project Overview</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-              <p>
-                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
-              </p>
-
-              <div class="features mt-4">
-                <h3>Key Features</h3>
-                <div class="row gy-3">
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
-                      <i class="bi bi-check-circle-fill"></i>
-                      <h4>Responsive Design</h4>
-                      <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-shield-check"></i>
-                      <h4>Advanced Security</h4>
-                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-graph-up"></i>
-                      <h4>Performance Optimization</h4>
-                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-gear"></i>
-                      <h4>Easy Integration</h4>
-                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h2>Description du projet</h2>
+              <p>Projet réalisé sur Revit, exporté vers Robot Structural Analysis, avec des plans de coffrage élaborés sur AutoCAD pour garantir la précision et la qualité de l’exécution structurelle.</p>
             </div>
           </div>
 
@@ -252,3 +202,24 @@
 </body>
 
 </html>
+<script>
+// Affichage dynamique selon l'URL (?projet=1 ou ?projet=2)
+const params = new URLSearchParams(window.location.search);
+const projet = params.get('projet');
+if (projet === '1') {
+  document.getElementById('details-villa').style.display = 'flex';
+  document.getElementById('project-info-list').innerHTML = `
+    <li><strong>Projet</strong> : Villa contemporaine R+1 avec sous-sol et piscine</li>
+    <li><strong>Modélisation</strong> : Revit</li>
+    <li><strong>Rendu</strong> : Enscape</li>
+  `;
+} else if (projet === '2') {
+  document.getElementById('details-hotel').style.display = 'flex';
+  document.getElementById('project-info-list').innerHTML = `
+    <li><strong>Projet</strong> : Structure d'hôtel R+4 avec sous-sol</li>
+    <li><strong>Modélisation structurelle</strong> : Revit</li>
+    <li><strong>Export</strong> : Robot Structure</li>
+    <li><strong>Plan de coffrage</strong> : AutoCAD</li>
+  `;
+}
+</script>
